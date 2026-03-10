@@ -126,6 +126,10 @@ h1 { font-size: clamp(2.1rem, 6vw, 4rem); margin: .4rem 0; }
 .credit-body p { margin: .3rem 0; color: var(--muted); }
 .meta { font-size: .92rem; }
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; }
+.services-grid { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+@media (max-width: 720px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem; box-shadow: 0 2px 14px rgba(11,34,58,.06); }
 .card p { color: var(--muted); margin: .4rem 0 0; }
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(155px,1fr)); gap: .75rem; }
